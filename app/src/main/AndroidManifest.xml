@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmadsyam">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.ahmadsyam.useCase.detectFromPicture.DetectFromPictureActivity"></activity>
+        <activity
+            android:name="com.example.ahmadsyam.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ahmadsyam.useCase.cameraIntent.SimpleCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".Main2Activity"/>
+        <activity android:name=".inputActivity"/>
+        <activity android:name="com.example.ahmadsyam.useCase.cameraX.CameraXActivity" />
+        <activity android:name="com.example.ahmadsyam.useCase.detectText.DetectTextActivity" /> <!-- Automatically download the text recognition model after app install -->
+        <meta-data
+            android:name="com.google.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

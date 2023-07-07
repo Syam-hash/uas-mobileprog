@@ -1,1 +1,1 @@
-Tugas ini dibuat untuk memenuhi Tugas UTS Mobile Programming
+Tugas ini dibuat untuk memenuhi Tugas UAS Mobile Programming
